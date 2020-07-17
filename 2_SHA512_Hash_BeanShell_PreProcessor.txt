@@ -1,0 +1,3 @@
+String hashstring = vars.get("hashstring");
+String hashedstring1 = "${__digest(SHA-512,${hashstring},,,)}";
+vars.put("hashedstring1",hashedstring1);
